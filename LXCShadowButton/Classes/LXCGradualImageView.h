@@ -1,5 +1,5 @@
 //
-//  ELGradualImageView.h
+//  LXCGradualImageView.h
 //  HopsonMall_C
 //
 //  Created by 刘晓晨 on 2018/7/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ELGradualImageView : UIImageView
+@interface LXCGradualImageView : UIImageView
 
 - (instancetype)initGradualImageWithColors:(NSArray *)colors;
 

@@ -1,21 +1,21 @@
 //
-//  ELGradualImageView.m
+//  LXCGradualImageView.m
 //  HopsonMall_C
 //
 //  Created by 刘晓晨 on 2018/7/12.
 //  Copyright © 2018年 Tianfire. All rights reserved.
 //
 
-#import "ELGradualImageView.h"
+#import "LXCGradualImageView.h"
 #import "UIImage+GradientColor.h"
 
-@interface ELGradualImageView ()
+@interface LXCGradualImageView ()
 
 @property (nonatomic,strong)NSArray *colors;
 
 @end
 
-@implementation ELGradualImageView
+@implementation LXCGradualImageView
 
 - (instancetype)initGradualImageWithColors:(NSArray *)colors {
     self = [super init];

@@ -7,7 +7,7 @@
 //
 
 #import "LXCViewController.h"
-#import "ELShadowButton.h"
+#import "LXCShadowButton.h"
 #import <Masonry.h>
 
 @interface LXCViewController ()
@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    ELShadowButton *button = [[ELShadowButton alloc] init];
+    LXCShadowButton *button = [[LXCShadowButton alloc] init];
     button.colors = @[[UIColor greenColor],[UIColor redColor]];
     button.radius = 20;
     button.layer.shadowColor = [UIColor orangeColor].CGColor;

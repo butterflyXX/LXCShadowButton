@@ -1,21 +1,21 @@
 //
-//  ELShadowButton.m
+//  LXCShadowButton.m
 //  ActionSheetPicker-3.0
 //
 //  Created by 刘晓晨 on 2018/8/22.
 //
 
-#import "ELShadowButton.h"
-#import "ELGradualImageView.h"
+#import "LXCShadowButton.h"
+#import "LXCGradualImageView.h"
 #import "Masonry.h"
 
-@interface ELShadowButton ()
+@interface LXCShadowButton ()
 
-@property (nonatomic,strong)ELGradualImageView *backImageView;
+@property (nonatomic,strong)LXCGradualImageView *backImageView;
 
 @end
 
-@implementation ELShadowButton
+@implementation LXCShadowButton
 
 -(void)setBackgroundColor:(UIColor *)backgroundColor {
     self.backImageView.backgroundColor = backgroundColor;
@@ -35,9 +35,9 @@
     [self insertSubview:self.backImageView atIndex:0];
 }
 
--(ELGradualImageView *)backImageView {
+-(LXCGradualImageView *)backImageView {
     if (!_backImageView) {
-        _backImageView = [[ELGradualImageView alloc] init];
+        _backImageView = [[LXCGradualImageView alloc] init];
         [self addSubview:_backImageView];
         [self insertSubview:_backImageView atIndex:0];
         [_backImageView mas_makeConstraints:^(MASConstraintMaker *make) {

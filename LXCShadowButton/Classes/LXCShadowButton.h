@@ -1,5 +1,5 @@
 //
-//  ELShadowButton.h
+//  LXCShadowButton.h
 //  ActionSheetPicker-3.0
 //
 //  Created by 刘晓晨 on 2018/8/22.
@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ELShadowButton : UIButton
+@interface LXCShadowButton : UIButton
 
 @property (nonatomic,assign)CGFloat radius; //设置圆角
 
