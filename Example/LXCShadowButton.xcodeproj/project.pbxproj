@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0EC9DE2B4827B18593CB901C /* Pods-LXCShadowButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCShadowButton_Tests.release.xcconfig"; path = "Target Support Files/Pods-LXCShadowButton_Tests/Pods-LXCShadowButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		44F928DC9598C6734B9BFB73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		44F928DC9598C6734B9BFB73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45F59E05A6DA949A751DC5B1 /* Pods-LXCShadowButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCShadowButton_Example.release.xcconfig"; path = "Target Support Files/Pods-LXCShadowButton_Example/Pods-LXCShadowButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LXCShadowButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXCShadowButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		640988C9A7AC302ED0B30E78 /* Pods_LXCShadowButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXCShadowButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		734230D0D9BC6BD344753BA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		734230D0D9BC6BD344753BA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		747615E0FBDD44910E73D80D /* Pods-LXCShadowButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCShadowButton_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LXCShadowButton_Tests/Pods-LXCShadowButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF48A72E5B577A3A404721CA /* Pods-LXCShadowButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXCShadowButton_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXCShadowButton_Example/Pods-LXCShadowButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C6137CF685DEC8027BA653AF /* LXCShadowButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LXCShadowButton.podspec; path = ../LXCShadowButton.podspec; sourceTree = "<group>"; };
+		C6137CF685DEC8027BA653AF /* LXCShadowButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXCShadowButton.podspec; path = ../LXCShadowButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FDAE220AA5BEE71F97ECB515 /* Pods_LXCShadowButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXCShadowButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				747615E0FBDD44910E73D80D /* Pods-LXCShadowButton_Tests.debug.xcconfig */,
 				0EC9DE2B4827B18593CB901C /* Pods-LXCShadowButton_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,10 +324,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LXCShadowButton_Example/Pods-LXCShadowButton_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LXCShadowButton/LXCShadowButton.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LXCShadowButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

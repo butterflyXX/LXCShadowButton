@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+[![](https://github.com/butterflyXX/LXCSource/blob/master/LXCShadowButton/QQ20190514-103141.png)
+
 ## Installation
 
 LXCShadowButton is available through [CocoaPods](https://cocoapods.org). To install

@@ -7,6 +7,8 @@
 //
 
 #import "LXCViewController.h"
+#import "ELShadowButton.h"
+#import <Masonry.h>
 
 @interface LXCViewController ()
 
@@ -18,6 +20,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    ELShadowButton *button = [[ELShadowButton alloc] init];
+    button.colors = @[[UIColor greenColor],[UIColor redColor]];
+    button.radius = 20;
+    button.layer.shadowColor = [UIColor orangeColor].CGColor;
+    button.layer.shadowRadius = 10;
+    button.layer.shadowOpacity = 0.8;
+    button.layer.shadowOffset = CGSizeMake(0, 2);
+    [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.offset(0);
+        make.size.mas_equalTo(CGSizeMake(200, 80));
+    }];
 }
 
 - (void)didReceiveMemoryWarning
